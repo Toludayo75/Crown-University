@@ -86,6 +86,22 @@ THE LEFT NAV THE MIDDLE NAV AND THE RIGHT NAV*/
     text-decoration: #bb3950 2px underline ;
     opacity: 0.3;
 }
+@media  (max-width:380px) {
+    .navigation{
+        padding-inline: 1rem;
+        position: fixed;
+        width: 100%;
+    }
+    .left-nav{
+        display: none;
+    }
+    .middle-nav img{
+        width:8rem ;
+    }
+    .right-nav li a{
+        display: none;
+    }
+}
 @media (min-width:380px) and  (max-width:480px) {
     .navigation{
         padding-inline: 1rem;
@@ -143,6 +159,13 @@ THE LEFT NAV THE MIDDLE NAV AND THE RIGHT NAV*/
 }
 
 /*MAIN LANDINGS EXCLUSIVE MEDIA QUERY*/
+@media (max-width:380px) {
+    .main-landing{
+        width: ;
+        background-size: cover;
+        height: 117vh;
+    }
+}
 @media (min-width:380px)and  (max-width:480px) {
     .main-landing{
         width: ;
@@ -223,6 +246,41 @@ THE LEFT NAV THE MIDDLE NAV AND THE RIGHT NAV*/
 .norm:hover{
     background-color: rgba(255, 255, 255, 0.508);
 }
+@media (max-width:380px) {
+    #landing{
+        padding: 0;
+        width: 100%;
+        height: 70vh;
+
+    }
+    .h-text{
+        padding-inline: 0rem;
+
+    }
+    .h-h1{
+        padding-inline:rem ;
+    }
+    .h-h1 h1{
+        font-size: 3rem;
+    }
+    .h-p {
+        padding: 1rem;
+    }
+    .btn{
+        display: grid;
+        padding: 2rem 1rem;
+    }
+    .red{
+        margin-bottom: 2rem;
+        padding: 1.22rem 7rem;
+    }
+    .norm{
+        margin-bottom: 2rem;
+        padding: 1.23rem 7rem;
+    }
+
+}
+
 @media (min-width:380px) and (max-width:480px){
     #landing{
         padding: 0;
@@ -343,7 +401,24 @@ THE LEFT NAV THE MIDDLE NAV AND THE RIGHT NAV*/
         text-align: center;
     }
 }
+@media (max-width:380px)  {
+    .explore{
+        margin-top: rem;
+        padding-inline: 1rem;
+        
 
+    }
+    .explore0{
+        display: block;
+    }
+    .explore1{
+        display: block;
+        height: 13rem;
+    }
+    .explore1-text{
+        text-align: center;
+    }
+}
 @media (min-width:480px) and (max-width:780px) {
     .explore{
         padding-inline: 2rem;
@@ -443,6 +518,64 @@ THE LEFT NAV THE MIDDLE NAV AND THE RIGHT NAV*/
     text-decoration: none;
     color: #000;
 }
+@media (min-width:380px) and (max-width:480px) {
+    #mission{
+        padding: 1rem;
+        height: 120vh;
+        width: 100%;
+        margin-top: 40rem;
+        display: block;
+
+    }
+    .mission-img{
+        width: 100%;
+        height: 20rem;
+    }
+    .mission-text{
+        width: 100%;
+        padding-top: 2rem;
+        padding-left: 1rem;
+        height: 20rem;
+    }
+    .mission-img .img-1{
+        height: auto;
+    }
+    .img-2 img{
+        height: 9.75rem;
+    }
+    .img-2 img:nth-child(2){
+        height: auto;
+     }
+}
+@media (max-width:380px) {
+    #mission{
+        padding: 1rem;
+        height: 120vh;
+        width: 100%;
+        margin-top: 40rem;
+        display: block;
+
+    }
+    .mission-img{
+        width: 100%;
+        height: 20rem;
+    }
+    .mission-text{
+        width: 100%;
+        padding-top: 2rem;
+        padding-left: 1rem;
+        height: 20rem;
+    }
+    .mission-img .img-1{
+        height: auto;
+    }
+    .img-2 img{
+        height: 9.75rem;
+    }
+    .img-2 img:nth-child(2){
+        height: auto;
+     }
+}
 @media (min-width:480px) and (max-width:780px) {
   #mission{
     display: block;
@@ -487,35 +620,7 @@ THE LEFT NAV THE MIDDLE NAV AND THE RIGHT NAV*/
  
 
 }
-@media (min-width:380px) and (max-width:480px) {
-    #mission{
-        padding: 1rem;
-        height: 120vh;
-        width: 100%;
-        margin-top: 40rem;
-        display: block;
 
-    }
-    .mission-img{
-        width: 100%;
-        height: 20rem;
-    }
-    .mission-text{
-        width: 100%;
-        padding-top: 2rem;
-        padding-left: 1rem;
-        height: 20rem;
-    }
-    .mission-img .img-1{
-        height: auto;
-    }
-    .img-2 img{
-        height: 9.75rem;
-    }
-    .img-2 img:nth-child(2){
-        height: auto;
-     }
-}
 
 /*ABOUT US SECTION STYLE*/
 .container{
@@ -606,6 +711,38 @@ THE LEFT NAV THE MIDDLE NAV AND THE RIGHT NAV*/
     }
 }
 @media (min-width:380px) and  (max-width:480px) {
+    #about{
+        padding-top: 4rem;
+    }
+    .about{
+        display: block;
+        height: 120vh;
+        margin-bottom: 5rem;
+    }
+    .about img{
+        width: 100%;
+        height: auto;
+    }
+    .about1,.about2{
+        padding-left: 1rem;
+        padding-top: 1rem;
+        padding-right: 0;
+    }
+    .about h3{
+        font-size: 1.5rem;
+    }
+    .about .btn{
+        padding: 1rem 6.5rem;
+        display: inline-block;
+        background: transparent;
+        color: #000;
+        border: 1.59px solid #000;
+        margin-top: 2rem;
+        cursor: pointer;
+        text-decoration: none;
+    }
+}
+@media (max-width:380px)  {
     #about{
         padding-top: 4rem;
     }
@@ -792,7 +929,39 @@ p{
     border: transparent;
  }
 
-
+ @media (max-width:380px) {
+    #academics{
+        padding-block: 4rem;
+        height: 230vh;
+        padding-inline: 0rem;
+    }
+    .program{
+        padding-inline: 1rem;
+    }
+    .program-pages{
+        display: block;
+    }
+    .program-text{
+        padding-inline: 2rem;
+    }
+    .program-text h3{
+        font-size: 1.4rem;
+    }
+    .undergraduate,
+    .postgraduate{
+        width: 21rem;
+        margin-bottom: 2rem;
+        margin-right: 0;
+        margin-left: 0;
+    }
+    .program-pages img{
+        width: 21rem;
+    }
+    .program .a-btn{
+       margin: 0;
+       padding: 1rem 5rem;
+    }
+}
 @media (min-width:380px) and  (max-width:480px) {
     #academics{
         padding-block: 4rem;
