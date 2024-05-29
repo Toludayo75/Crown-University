@@ -1,0 +1,320 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+:root{
+    --primary-color:  #bb3950;;
+    --secondary-color: #fff;
+    --tertiary-color: #000 ;
+    --master-color: ;
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto", sans-serif;
+}
+
+/*DEFAULT HEIGHT FOR ALL IMAGES */
+img{
+    height: auto;
+}
+
+/*DEFAULT BUTTON STYLE FOR RED AND NORM*/
+
+.btn{
+    display: flex;
+    justify-content: space-;
+    margin-top: 2rem;   
+
+}
+
+.btn a{
+    text-decoration: none;
+    color: #333;
+}
+
+.red{
+    display: inline-block;
+    border: none;
+    background-color: var(--primary-color);
+    color: #fff;
+    padding: 1.4rem 2rem;
+    margin-right: 2rem;
+    margin-bottom: 3rem;   
+}
+
+.red:hover{
+    background-color: #c4123095;
+}
+
+.norm{
+    display: inline-block;
+    border: none;
+    background-color: transparent;
+    color: #333;
+    padding: 0.75rem 1.5rem;
+    text-decoration: none;
+    border: 1px solid #a9a7a7;
+    margin-bottom: 3rem;   
+}
+
+.norm:hover{
+    background-color: rgba(255, 255, 255, 0.508);
+}
+
+
+/* NAVIGATION STYLING*/
+.navigation{
+    height: 4rem;
+    width: 100%;
+    padding-inline:15rem ;
+    background-color: var(--secondary-color);
+}
+
+.first-nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 4rem;
+}
+
+/* THIS CONTAINS THE STYLING FOR ALL DIVISIONS OF THE NAVIGATION
+THE LEFT NAV THE MIDDLE NAV AND THE RIGHT NAV*/
+
+.left-nav ul{
+  display: flex;
+  list-style: none;
+  justify-content: space-between;
+}
+
+.left-nav ul li a{
+    text-decoration: none;
+    color: var(--tertiary-color);
+    padding: 1rem;
+    font-size: 0.95rem;
+}
+
+.left-nav ul a:hover{
+    text-decoration: var(--primary-color) 2px underline;
+    opacity: 0.3;
+}
+.active{
+    color: black;
+    opacity: 0.5;
+    border-bottom: 3px solid #000 ;
+}
+/*STYLING THE MIDDLE NAV*/
+
+.middle-nav img{
+   width: 9rem;
+}
+
+/*STYLING THE RIGHT NAV*/
+
+.right-nav ul{
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    
+}
+
+.right-nav ul a{
+    text-decoration: none;
+    color: var(--tertiary-color);
+    padding: 1rem;
+    font-size: 0.95rem;
+}
+
+.right-nav ul a:hover{
+    text-decoration: #bb3950 2px underline ;
+    opacity: 0.3;
+}
+@media  (max-width:380px) {
+    .navigation{
+        padding-inline: 1rem;
+        position: fixed;
+        width: 100%;
+    }
+    .left-nav{
+        display: none;
+    }
+    .middle-nav img{
+        width:8rem ;
+    }
+    .right-nav li a{
+        display: none;
+    }
+}
+@media (min-width:380px) and  (max-width:480px) {
+    .navigation{
+        padding-inline: 1rem;
+        position: fixed;
+        width: 100%;
+    }
+    .left-nav{
+        display: none;
+    }
+    .middle-nav img{
+        width:8rem ;
+    }
+    .right-nav li a{
+        display: none;
+    }
+}
+@media (min-width:480px) and (max-width:780px) {
+    .navigation{
+        padding-inline: 1rem;
+        width: 100%;
+    }
+    .first-nav{
+        width: 100%;
+    }
+    .right-nav{
+        display: none;
+    }
+    .middle-nav{
+        display: none;
+    }
+}
+
+/*LANDING PAGE :: ACADEMIC STYLE*/
+
+#academic{
+    height: 55vh;
+    background-color: rgba(11, 11, 76, 0.897);
+    text-align: center;
+    padding-inline: 13rem;
+    padding-block-start: 10rem;
+}
+
+.academic-text{
+    padding-inline: 20rem;
+}
+.academic-text h2{
+    font-weight: 300;
+    font-size: 2.2rem;
+    color: var(--secondary-color);
+    margin-bottom: 1rem;
+}
+.academic-text p{
+    font-weight: 100;
+    line-height: 1.5rem;
+    color: var(--secondary-color);
+}
+
+/*LEARN ABOUT OUR ACADEMICS SECTION STYLING*/
+
+#learn-about-academic{
+    height: 100vh;
+    padding-inline-start: 15rem;
+    padding-inline-end: 12rem;
+    padding-block-start: 5rem;
+    display: flex;
+    width: 100%;
+}
+
+.learn-nav{
+    width: 80% ;
+    height: 15rem;
+    padding: 2rem;
+    text-align: left;
+    box-shadow: 0px 10px 10px rgb(220, 220, 220);
+
+}
+.learn-nav ul{
+    list-style: none;
+
+}
+.learn-nav a{
+    text-decoration: none;
+    color: #000;
+    padding: 0.9rem;
+    font-size: 0.9rem;
+    border-bottom: 2px solid #e0dede ;
+}
+
+.learn-nav li{
+    padding-block: 1rem;
+}
+
+.learn-content{
+    height: 80vh;
+    width:200% ;
+    overflow: scroll;
+    padding-inline-start: 4rem;
+}
+
+.learn-about-us{
+    height: 50vh;
+    padding-top: 2rem;
+    border-bottom: 2px solid #e0dede ;
+
+}
+
+.learn-about-us h2{
+    font-weight: 390;
+    font-size: 2.15rem;
+    color: var(--tertiary-color);
+    margin-bottom: 1rem;
+}
+
+.learn-about-us p{
+    font-weight: 100;
+    font-size:0.8rem ;
+    line-height: 1.5rem;
+    margin-bottom: 1rem;
+    color: var(--tertiary-color);
+}
+
+.stats{
+    height: 54vh;
+    padding: 2rem;
+    border-bottom: 2px solid #e0dede ;
+
+}
+
+.inline-stat{
+    display: flex;
+    height: 20vh;
+    width: 100%;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+.first-stat{
+    width:33% ;
+    padding: 2rem;
+    align-items: center;
+}
+.first-stat h3{
+    font-size: 2.0rem;
+    font-weight: 400;
+    color: #bb3950;
+}
+.first-stat p{
+    font-size: 0.85rem;
+    font-weight: 400;
+    color: rgb(145, 143, 143);
+}
+
+.under-content{
+    height: fit-content;
+    padding-top: 2rem;
+    border-bottom: 2px solid #e0dede ;
+}
+.under-content h2{
+    font-weight: 390;
+    font-size: 2.15rem;
+    color: var(--tertiary-color);
+    margin-bottom: 1rem;
+}
+.under-content p{
+    font-weight: 100;
+    font-size:0.8rem ;
+    line-height: 1.5rem;
+    margin-bottom: 1rem;
+    color: var(--tertiary-color);
+}
+.under-content img{
+    width: 100%;
+}
