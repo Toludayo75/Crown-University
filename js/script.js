@@ -16,7 +16,7 @@ const nextSlide = () => {
         current.nextElementSibling.classList.add('current');
     } else{
         // add current to start
-        slides[0].classList.add('current');
+        slides[-1].classList.add('current');
     }
     setTimeout(() => current.classList.remove('current'));
 }
