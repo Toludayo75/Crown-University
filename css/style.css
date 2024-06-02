@@ -1591,7 +1591,7 @@ p{
 .spotlight1 img, .spotlight2 img{
    width:5rem;
    float: left;
-   margin-left: 1rem;
+   margin-left: 0rem;
    border-radius: 50%;
 }
 
@@ -1661,7 +1661,12 @@ p{
         width: 100%;
         padding: 1rem;
         margin-left: 0rem;
-    
+    }
+    .spotlight1 p , .spotlight2 p{
+        float: left;
+        margin-top: 0.5rem;
+        font-size: 1rem;
+        font-weight: 300;
     }
     .spotlight-count{
         display: block;
