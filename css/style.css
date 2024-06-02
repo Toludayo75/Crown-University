@@ -18,26 +18,7 @@
 img{
     height: auto;
 }
-/*
-.pointer{
-    position: ;
-    background-color: #a9a7a7;
-    height: 4rem;
-    width: 100%;
-    position: ;
-    z-index: 1;
 
-}
-
-.grey{
-    display: inline-block;
-    background-color: var(--primary-color);
-    color: #fff;
-    padding: 1rem 1rem;
-    position: fixe;
-    float: right;
-
-}*/
 /*DEFAULT FONT FAMILY FOR ALL*/
 
 /* NAVIGATION STYLING*/
@@ -107,7 +88,6 @@ THE LEFT NAV THE MIDDLE NAV AND THE RIGHT NAV*/
 @media  (max-width:380px) {
     .navigation{
         padding-inline: 1rem;
-        position: fixed;
         width: 100%;
     }
     .left-nav{
@@ -123,7 +103,7 @@ THE LEFT NAV THE MIDDLE NAV AND THE RIGHT NAV*/
 @media (min-width:380px) and  (max-width:480px) {
     .navigation{
         padding-inline: 1rem;
-        position: fixed;
+
         width: 100%;
     }
     .left-nav{
@@ -253,9 +233,7 @@ THE LEFT NAV THE MIDDLE NAV AND THE RIGHT NAV*/
     color: #fff;
 }
 .btn{
-    display: flex;
-    justify-content: space-between;
-    padding-inline: 8rem;   
+   
 }
 
 .btn a{
@@ -305,12 +283,11 @@ THE LEFT NAV THE MIDDLE NAV AND THE RIGHT NAV*/
     }
     .h-text h1{
         font-size: 2.6rem;
+        font-weight: 300;
     }
  
     .btn{
-        display: grid;
-        padding: 3rem 1rem;
-        padding-inline: 2rem;
+
     }
     .red{
         margin-bottom: 2rem;
@@ -341,14 +318,14 @@ THE LEFT NAV THE MIDDLE NAV AND THE RIGHT NAV*/
     .h-text h1{
         font-size: 2.63rem;
         margin-bottom: 2rem;
+        font-weight: 300;
     }
     .h-text p{
         font-size: 1.1rem;
+        font-weight: 200;
     }
     .btn{
-        display: grid;
-        padding: 4rem 1rem;
-        padding-inline: 2.5rem;
+
 
     }
     .red{
@@ -385,8 +362,7 @@ THE LEFT NAV THE MIDDLE NAV AND THE RIGHT NAV*/
         margin-bottom: 5rem;
     }
     .btn{
-        padding-inline: 1rem;
-        display: ;
+
     }
     .red{
         margin-right: 0.5rem;
@@ -420,7 +396,7 @@ THE LEFT NAV THE MIDDLE NAV AND THE RIGHT NAV*/
         margin-bottom: 5rem;
     }
     .btn{
-        padding-inline: 3rem;
+
     }
     .red{
         margin-bottom: ;
@@ -582,32 +558,34 @@ THE LEFT NAV THE MIDDLE NAV AND THE RIGHT NAV*/
 
 #mission{
     display: flex;
-    height: 60vh;
+    height: 95vh;
     align-items: center;
-    margin-top:5rem;
+    margin-top:1rem;
     padding-inline: 16rem;
     
 }
 
 .mission-img{
     width: 55%;
+    height: 62vh;
     display: flex;
     justify-content: space-between;
 }
 
 .mission-img .img-1{
    width: 62%;
-   height: 30rem;
+   height: auto;
 }
 
 .mission-img img{
     width: 100%;
- 
+    height: auto;
 }
 
 .img-2{
     display: block;
     width: 35%;
+    height: auto;
 }
 
 .img-2 img{
@@ -617,15 +595,16 @@ THE LEFT NAV THE MIDDLE NAV AND THE RIGHT NAV*/
 
 .img-2 img:first-child{
     margin-bottom:1rem;
+    height: auto;
 }
 
 .img-2 img:nth-child(2){
-   height: 14.75rem;
+   height: auto;
 }
 
 .mission-text{
     width: 45%;
-    height: 30rem;
+    height: 62vh;
     padding-left: 3rem;
     padding-top: 1.5rem;
 }
@@ -901,6 +880,9 @@ THE LEFT NAV THE MIDDLE NAV AND THE RIGHT NAV*/
         height: 120vh;
         margin-bottom: 5rem;
     }
+    .container{
+        padding: 0.5rem;
+    }
     .about img{
         width: 100%;
         height: auto;
@@ -909,12 +891,13 @@ THE LEFT NAV THE MIDDLE NAV AND THE RIGHT NAV*/
         padding-left: 1rem;
         padding-top: 1rem;
         padding-right: 0;
+        text-align: center;
     }
     .about h3{
         font-size: 1.5rem;
     }
     .about .btn{
-        padding: 1rem 6.5rem;
+        padding: 1rem 3.5rem;
         display: inline-block;
         background: transparent;
         color: #000;
@@ -922,6 +905,7 @@ THE LEFT NAV THE MIDDLE NAV AND THE RIGHT NAV*/
         margin-top: 2rem;
         cursor: pointer;
         text-decoration: none;
+        font-size: 0.7rem;
     }
 }
 @media (max-width:380px)  {
@@ -933,6 +917,9 @@ THE LEFT NAV THE MIDDLE NAV AND THE RIGHT NAV*/
         height: 120vh;
         margin-bottom: 3rem;
     }
+    .container{
+        padding: 0.5rem;
+    }
     .about img{
         width: 100%;
         height: auto;
@@ -940,13 +927,14 @@ THE LEFT NAV THE MIDDLE NAV AND THE RIGHT NAV*/
     .about1,.about2{
         padding-left: 1rem;
         padding-top: 1rem;
-        padding-right: 0;
+        padding-right: 1rem;
+        text-align: center;
     }
     .about h3{
         font-size: 1.5rem;
     }
     .about .btn{
-        padding: 1rem 6.5rem;
+        padding: 1rem 3.5rem;
         display: inline-block;
         background: transparent;
         color: #000;
@@ -954,7 +942,9 @@ THE LEFT NAV THE MIDDLE NAV AND THE RIGHT NAV*/
         margin-top: 2rem;
         cursor: pointer;
         text-decoration: none;
+        font-size: 0.7rem;
     }
+
 }
 @media (min-width:701px) and (max-width:1023px) {
     .about{
@@ -1095,7 +1085,7 @@ p{
     margin-top: 2rem;
 }
 .course{
-    font-weight: 600;
+    font-weight: 300;
     font-size: 0.85rem;
 
 }
@@ -1105,14 +1095,14 @@ p{
     font-weight: 400;
 }
 .course2{
-    font-weight: 600;
+    font-weight: 300;
     font-size: 0.85rem;
 
 }
 .course2 span{
     color: #c41230;
     font-size: 1.8rem;
-    font-weight: 400;
+    font-weight: 300;
 }
 .a-btn{
     display: inline-block;
@@ -1138,13 +1128,16 @@ p{
         padding-inline: 0rem;
     }
     .program{
-        padding-inline: 1rem;
+        padding-inline: 0.5rem;
+        text-align: center;
     }
     .program-pages{
         display: block;
+        text-align: left;
     }
     .program-text{
         padding-inline: 2rem;
+        font-family: "Roboto", sans-serif;
     }
     .program-text h3{
         font-size: 1.4rem;
@@ -1161,7 +1154,17 @@ p{
     }
     .program .a-btn{
        margin: 0;
-       padding: 1rem 5rem;
+       padding: 1rem 3.0rem;
+    }
+    h4{
+        font-family: "Roboto", sans-serif;
+        font-weight: 400;
+        font-size: 1.7rem;
+    }
+    p{
+        font-size: 0.9rem;
+        font-weight: 300;
+        font-family: "Roboto", sans-serif;
     }
 }
 @media (min-width:380px) and  (max-width:480px) {
@@ -1171,7 +1174,7 @@ p{
         padding-inline: 0rem;
     }
     .program{
-        padding-inline: 1rem;
+        padding-inline: 0.5rem;
     }
     .program-pages{
         display: block;
@@ -1250,7 +1253,6 @@ p{
     border-image-slice: fill 1;
 }
 
-
 .video-landing{
     height: 70vh;
     padding: 7rem 10rem;
@@ -1290,6 +1292,21 @@ p{
     }
     .video-text{
         padding: 2rem 1rem;
+    }
+    .video-text h2{
+        font-weight: 300;
+        letter-spacing: 0;
+
+    }
+     .video-text p{
+        font-weight: 200;
+
+    }
+    .video-b{
+
+    }
+    .video-text button a{
+    font-size: 0.7rem;
     }
 }
 @media (min-width:380px) and (max-width:480px) {
@@ -1402,7 +1419,6 @@ p{
 }
 .buttons{
     float: right;
-    justify-content: space-between;
     padding: 2rem
 }
 
@@ -1470,8 +1486,42 @@ p{
 #slide-section button {
     margin-top: 2rem;
 }
+@media (max-width:380px) {
+    .slide .content{
+        position:relative ;
+        float: left;
+        top: 58.3%;
+        left: -599.9px;
+        padding: 30px;
+        width: 22rem;
+    }
 
 
+    .slider{
+        position:relative ;
+        overflow: hidden;
+        height: 90vh;
+        width: 100vw;
+        padding-block: 1rem;
+    }
+}
+@media (min-width:380px) and (max-width:480px){
+    .slide .content{
+        position:relative ;
+        float: left;
+        top: 58.3%;
+        left: -599.9px;
+        padding: 30px;
+        width: 22rem;
+    }
+    .slider{
+        position:relative ;
+        overflow: hidden;
+        height: 90vh;
+        width: 100vw;
+        padding-block: 1rem;
+    }
+}
 
 /*STYLING FOR SPOTLIGHT*/
 #spotlight{
@@ -1481,7 +1531,7 @@ p{
 }
 
 .spotlight-text{
-    height:25vh;
+    height:34vh;
     padding-block: 2rem;
     padding-inline: 22.5rem;
 }
@@ -1615,9 +1665,21 @@ p{
     }
     .spotlight-count{
         display: block;
-
-        padding: 1rem;
+        padding: 3rem;
         height: fit-content;
+    }
+    .spotlight-text h4{
+        color: #bb3950;
+        font-size: 0.9rem;
+        font-family: "Roboto", sans-serif;
+    
+    }
+    .spotlight-text h2{
+        font-size: 1.96rem;
+        font-weight: 400;
+        margin-bottom: 1rem;
+        font-family: "Roboto", sans-serif;
+    
     }
      .count{
         padding-inline: 0rem;
@@ -1625,7 +1687,7 @@ p{
     .count h2{
         font-size: 2.8rem;
         color: #bb3950;
-        font-weight: 200;
+        font-weight: 300;
         margin-bottom: 0.5rem;
         font-family: "Roboto", sans-serif;
     }
@@ -1633,14 +1695,14 @@ p{
     .count h5{
         font-size: 1.09rem;
         color: #000;
-        font-weight: 400;
+        font-weight: 450;
         margin-bottom: 0.5rem;
         font-family: "Roboto", sans-serif;
     }
     .count p{
         font-size: 0.99rem;
         margin-top: rem;
-        font-weight: 200;
+        font-weight: 300;
     }
     
     
@@ -1675,10 +1737,15 @@ p{
         margin-left: 0rem;
     
     }
+    .spotlight1 p ,.spotlight2 p{
+        width: 18rem;
+        font-size: 0.8rem;
+        margin-top: 0.5rem;
+        font-weight: 200;
+    }
     .spotlight-count{
         display: block;
-
-        padding: 2rem;
+        padding: 3rem;
         height: fit-content;
     }
      .count{
@@ -1716,20 +1783,20 @@ p{
 
 /*FOLLOW US ON ****STYLING*/
 #follow-us{
-    height: 100vh;
+    height: 105vh;
     text-align: center;
     width: 100%;
 }
 
 .follow-text{
-    height: 20vh;
+    height: 30vh;
     padding-top: 1rem;
     padding-inline: 33rem;
 }
 .follow-text h3{
     font-size: 2.2rem;
     font-family: "Roboto", sans-serif;
-    font-weight: 360;
+    font-weight: 400;
     margin-bottom: 1rem;
 }
 .follow-text p{
@@ -1757,10 +1824,10 @@ p{
 
 @media (max-width:380px) {
     #follow-us{
-        height: 80vh;
+        height: 100vh;
     }
     .follow-text{
-        height: 17vh;
+        height: 35vh;
         padding-top: 1rem;
         padding-inline: 1rem;
     }
@@ -1773,6 +1840,12 @@ p{
     .follow-link img{
         width: 100%;
     }
+    .follow-text p{
+        font-size: 0.9rem;
+        font-family: "Roboto", sans-serif;
+        font-weight: 300;
+        margin-bottom: 1rem;
+    }
     .follow{
         margin-top: 2rem;
         padding: ;
@@ -1783,7 +1856,7 @@ p{
         height: 80vh;
     }
     .follow-text{
-        height: 17vh;
+        height: 25vh;
         padding-top: 1rem;
         padding-inline: 1rem;
     }
