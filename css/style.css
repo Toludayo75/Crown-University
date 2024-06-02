@@ -1490,10 +1490,10 @@ p{
     .slide .content{
         position:relative ;
         float: left;
-        top: 58.3%;
+        top: 55%;
         left: -599.9px;
         padding: 30px;
-        width: 22rem;
+        width: 21rem;
     }
 
 
@@ -1503,6 +1503,9 @@ p{
         height: 90vh;
         width: 100vw;
         padding-block: 1rem;
+    }
+    .slide .content h2{
+        font-size: 1.5rem;
     }
 }
 @media (min-width:380px) and (max-width:480px){
